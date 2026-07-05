@@ -1,0 +1,51 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in brain-computer interfaces (BCIs) have demonstrated remarkable potential by leveraging neuroplasticity principles from cognitive psychology alongside machine learning algorithms that decode neural signals from the motor cortex. A study utilizing functional magnetic resonance imaging (fMRI) revealed that participants could achieve 94% accuracy in cursor control through deep neural networks trained on electroencephalography (EEG) data, suggesting that the brain's adaptive capacity intersects productively with artificial intelligence architectures. Furthermore, the psychological implications of long-term BCI use raise questions about user agency and cognitive load, while the underlying neuroscience involves understanding synaptic plasticity, signal transduction pathways, and the role of neurotransmitters in facilitating human-machine communication."
+    },
+    "solution_criteria": [
+      "Extracts all distinct subject areas spanning psychology, neuroscience, and technology domains",
+      "Separates interdisciplinary topics into individual, non-overlapping entries",
+      "Returns results as a JSON array of strings with no additional formatting or metadata"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with interdisciplinary passage containing mixed topics from psychology, neuroscience, and technology to verify accurate identification and separation of distinct subject areas"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Quantum entanglement represents a fundamental phenomenon wherein two or more particles become correlated in such a manner that the quantum state of one particle cannot be described independently of the others, even when spatially separated. Bell's theorem demonstrates that no local hidden variable theory can reproduce all predictions of quantum mechanics, establishing entanglement as a genuine feature of nature rather than a manifestation of incomplete knowledge. Recent experimental advances utilizing photonic systems and trapped ions have achieved high-fidelity entanglement generation with visibility exceeding 99%, while quantum teleportation protocols have successfully transferred quantum states across distances of over 100 kilometers using entangled photon pairs distributed through optical fiber networks."
+    },
+    "solution_criteria": [
+      "Extracts only topics directly discussed in the passage without adding unrelated concepts",
+      "Captures the primary subject (quantum entanglement) and its key technical components (Bell's theorem, experimental methods, quantum teleportation)",
+      "Returns results as a JSON array of strings",
+      "Avoids over-extraction of minor details as separate topics"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a dense academic passage on a single narrow topic (e.g., quantum entanglement) to ensure the prompt doesn't over-extract or hallucinate unrelated topics"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in natural language processing have demonstrated the efficacy of transformer-based architectures across diverse applications. While recurrent neural networks dominated sequence modeling for decades, attention mechanisms have revolutionized machine translation, sentiment analysis, and question-answering systems. Concurrently, researchers have applied these frameworks to biomedical text mining, leveraging transfer learning approaches to extract clinical entities and drug-disease relationships from electronic health records. Furthermore, the intersection of knowledge graphs and neural language models has enabled enhanced semantic understanding, with applications spanning information extraction, entity linking, and knowledge base completion. These methodologies have also proven valuable in low-resource settings, where few-shot learning and zero-shot transfer techniques address data scarcity challenges in specialized domains such as legal document classification and scientific literature mining."
+    },
+    "solution_criteria": [
+      "Extracts all major research topics and methodologies mentioned (e.g., transformer architectures, attention mechanisms, transfer learning, knowledge graphs, few-shot learning)",
+      "Includes both primary research areas (NLP, machine translation, sentiment analysis) and secondary application domains (biomedical, clinical, legal, scientific)",
+      "Returns output as a JSON array of strings with no additional formatting or explanations"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a literature review passage that explicitly mentions multiple methodologies, theoretical frameworks, and application domains to verify extraction of both primary and secondary research topics"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in CRISPR-Cas9 gene editing have demonstrated remarkable efficacy in treating monogenic disorders, as evidenced by clinical trials (Smith et al., 2022; Johnson & Lee, 2023) utilizing off-target mitigation strategies to reduce unintended DNA modifications. The mechanism involves PAM-dependent recognition sequences and sgRNA-guided cleavage, which researchers have optimized through machine learning algorithms to predict and minimize off-target effects. Furthermore, AAV-mediated delivery systems have emerged as a promising approach for in vivo applications, though immunogenicity concerns and limited packaging capacity remain significant hurdles in translating these therapies to the clinic."
+    },
+    "solution_criteria": [
+      "Extracts conceptual topics (e.g., 'gene editing', 'off-target effects', 'delivery systems') rather than acronyms, citations, or author names",
+      "Identifies major research areas and methodologies discussed in the passage",
+      "Returns results as a valid JSON array of strings"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a passage containing domain-specific jargon, citations, and acronyms to ensure the prompt correctly identifies conceptual topics rather than getting confused by technical nomenclature or reference formatting"
+  }
+]

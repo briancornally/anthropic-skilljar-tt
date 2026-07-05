@@ -1,0 +1,71 @@
+[
+  {
+    "output": "```json\n[\n  \"Brain-computer interfaces\",\n  \"Neuroplasticity\",\n  \"Machine learning\",\n  \"Neural signal decoding\",\n  \"Motor cortex\",\n  \"Functional magnetic resonance imaging\",\n  \"Deep neural networks\",\n  \"Electroencephalography\",\n  \"User agency\",\n  \"Cognitive load\",\n  \"Synaptic plasticity\",\n  \"Signal transduction\",\n  \"Neurotransmitters\",\n  \"Human-machine communication\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in brain-computer interfaces (BCIs) have demonstrated remarkable potential by leveraging neuroplasticity principles from cognitive psychology alongside machine learning algorithms that decode neural signals from the motor cortex. A study utilizing functional magnetic resonance imaging (fMRI) revealed that participants could achieve 94% accuracy in cursor control through deep neural networks trained on electroencephalography (EEG) data, suggesting that the brain's adaptive capacity intersects productively with artificial intelligence architectures. Furthermore, the psychological implications of long-term BCI use raise questions about user agency and cognitive load, while the underlying neuroscience involves understanding synaptic plasticity, signal transduction pathways, and the role of neurotransmitters in facilitating human-machine communication."
+      },
+      "solution_criteria": [
+        "Extracts all distinct subject areas spanning psychology, neuroscience, and technology domains",
+        "Separates interdisciplinary topics into individual, non-overlapping entries",
+        "Returns results as a JSON array of strings with no additional formatting or metadata"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+      "scenario": "Testing with interdisciplinary passage containing mixed topics from psychology, neuroscience, and technology to verify accurate identification and separation of distinct subject areas"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no extra commentary or metadata. The extraction is strong across domains and maintains appropriate granularity. However, the solution is incomplete\u2014it misses several explicitly mentioned topics including 'cognitive psychology' (stated in the first sentence), 'cursor control' (a key outcome of the study), and 'adaptive capacity' (a central concept discussed). While these omissions are relatively minor in the context of a comprehensive extraction, they represent gaps in completeness that prevent a perfect score."
+  },
+  {
+    "output": "```json\n[\n  \"Quantum entanglement\",\n  \"Bell's theorem\",\n  \"Local hidden variable theory\",\n  \"Quantum mechanics\",\n  \"Photonic systems\",\n  \"Trapped ions\",\n  \"Entanglement generation\",\n  \"Quantum teleportation\",\n  \"Entangled photon pairs\",\n  \"Optical fiber networks\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Quantum entanglement represents a fundamental phenomenon wherein two or more particles become correlated in such a manner that the quantum state of one particle cannot be described independently of the others, even when spatially separated. Bell's theorem demonstrates that no local hidden variable theory can reproduce all predictions of quantum mechanics, establishing entanglement as a genuine feature of nature rather than a manifestation of incomplete knowledge. Recent experimental advances utilizing photonic systems and trapped ions have achieved high-fidelity entanglement generation with visibility exceeding 99%, while quantum teleportation protocols have successfully transferred quantum states across distances of over 100 kilometers using entangled photon pairs distributed through optical fiber networks."
+      },
+      "solution_criteria": [
+        "Extracts only topics directly discussed in the passage without adding unrelated concepts",
+        "Captures the primary subject (quantum entanglement) and its key technical components (Bell's theorem, experimental methods, quantum teleportation)",
+        "Returns results as a JSON array of strings",
+        "Avoids over-extraction of minor details as separate topics"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+      "scenario": "Testing with a dense academic passage on a single narrow topic (e.g., quantum entanglement) to ensure the prompt doesn't over-extract or hallucinate unrelated topics"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it provides a valid JSON array of strings containing topics from the article, with clean strings and no extra commentary. Regarding secondary criteria, it successfully captures the primary subject and key technical components while avoiding unrelated concepts. However, there is minor over-extraction of implementation details ('Entanglement generation' is somewhat redundant with 'Quantum entanglement' and 'Trapped ions' as experimental methods) and a notable omission of 'quantum state,' which is explicitly mentioned as a fundamental concept. These are relatively minor issues that don't significantly impact the overall quality of the extraction."
+  },
+  {
+    "output": "```json\n[\n  \"Transformer-based architectures\",\n  \"Natural language processing\",\n  \"Attention mechanisms\",\n  \"Machine translation\",\n  \"Sentiment analysis\",\n  \"Question-answering systems\",\n  \"Biomedical text mining\",\n  \"Transfer learning\",\n  \"Clinical entity extraction\",\n  \"Drug-disease relationships\",\n  \"Electronic health records\",\n  \"Knowledge graphs\",\n  \"Neural language models\",\n  \"Semantic understanding\",\n  \"Information extraction\",\n  \"Entity linking\",\n  \"Knowledge base completion\",\n  \"Few-shot learning\",\n  \"Zero-shot transfer\",\n  \"Legal document classification\",\n  \"Scientific literature mining\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in natural language processing have demonstrated the efficacy of transformer-based architectures across diverse applications. While recurrent neural networks dominated sequence modeling for decades, attention mechanisms have revolutionized machine translation, sentiment analysis, and question-answering systems. Concurrently, researchers have applied these frameworks to biomedical text mining, leveraging transfer learning approaches to extract clinical entities and drug-disease relationships from electronic health records. Furthermore, the intersection of knowledge graphs and neural language models has enabled enhanced semantic understanding, with applications spanning information extraction, entity linking, and knowledge base completion. These methodologies have also proven valuable in low-resource settings, where few-shot learning and zero-shot transfer techniques address data scarcity challenges in specialized domains such as legal document classification and scientific literature mining."
+      },
+      "solution_criteria": [
+        "Extracts all major research topics and methodologies mentioned (e.g., transformer architectures, attention mechanisms, transfer learning, knowledge graphs, few-shot learning)",
+        "Includes both primary research areas (NLP, machine translation, sentiment analysis) and secondary application domains (biomedical, clinical, legal, scientific)",
+        "Returns output as a JSON array of strings with no additional formatting or explanations"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+      "scenario": "Testing with a literature review passage that explicitly mentions multiple methodologies, theoretical frameworks, and application domains to verify extraction of both primary and secondary research topics"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it provides a valid JSON array of strings containing topics from the article, with clean topic names and no extraneous commentary. It successfully extracts the vast majority of major topics and methodologies across both primary and secondary criteria. However, it has minor gaps in comprehensiveness by omitting 'recurrent neural networks' (explicitly mentioned as dominating sequence modeling for decades) and 'sequence modeling' itself (a core concept). These are notable omissions given the secondary criteria's emphasis on extracting 'all major research topics and methodologies mentioned.' The solution is strong overall but not exhaustive."
+  },
+  {
+    "output": "```json\n[\n  \"CRISPR-Cas9 gene editing\",\n  \"Monogenic disorders treatment\",\n  \"Off-target mitigation strategies\",\n  \"PAM-dependent recognition sequences\",\n  \"sgRNA-guided cleavage\",\n  \"Machine learning algorithms for gene editing\",\n  \"AAV-mediated delivery systems\",\n  \"In vivo gene therapy applications\",\n  \"Immunogenicity concerns\",\n  \"Gene therapy packaging capacity\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in CRISPR-Cas9 gene editing have demonstrated remarkable efficacy in treating monogenic disorders, as evidenced by clinical trials (Smith et al., 2022; Johnson & Lee, 2023) utilizing off-target mitigation strategies to reduce unintended DNA modifications. The mechanism involves PAM-dependent recognition sequences and sgRNA-guided cleavage, which researchers have optimized through machine learning algorithms to predict and minimize off-target effects. Furthermore, AAV-mediated delivery systems have emerged as a promising approach for in vivo applications, though immunogenicity concerns and limited packaging capacity remain significant hurdles in translating these therapies to the clinic."
+      },
+      "solution_criteria": [
+        "Extracts conceptual topics (e.g., 'gene editing', 'off-target effects', 'delivery systems') rather than acronyms, citations, or author names",
+        "Identifies major research areas and methodologies discussed in the passage",
+        "Returns results as a valid JSON array of strings"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+      "scenario": "Testing with a passage containing domain-specific jargon, citations, and acronyms to ensure the prompt correctly identifies conceptual topics rather than getting confused by technical nomenclature or reference formatting"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it provides a valid JSON array of strings containing topics without extra commentary, and the response contains only the JSON array. It successfully avoids acronyms (CRISPR, PAM, sgRNA, AAV are expanded into conceptual topics), citations, and author names. The extracted topics align well with the secondary criteria of identifying major research areas and methodologies. However, the extraction is not exhaustive\u2014several relevant topics mentioned in the passage are omitted, which represents a minor deficiency in comprehensiveness. The solution demonstrates good judgment in topic selection and phrasing, with only minor room for improvement in completeness and conciseness."
+  }
+]

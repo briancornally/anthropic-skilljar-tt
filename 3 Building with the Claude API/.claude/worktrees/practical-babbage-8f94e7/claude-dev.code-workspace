@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Library/Mobile Documents/com~apple~CloudDocs/_/org/cbtw-org/Training/202604-Claude-cbtw"
+		}
+	],
+	"settings": {
+		"git.scanRepositories": [
+			"repo/service-core",
+			"repo/service-integrations"
+		]
+	}
+}

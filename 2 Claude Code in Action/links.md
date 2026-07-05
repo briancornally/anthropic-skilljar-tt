@@ -1,0 +1,15 @@
+- https://code.claude.com/docs/en/overview
+- https://code.claude.com/docs/en/common-workflows
+- https://code.claude.com/docs/en/best-practices
+- https://code.claude.com/docs/en/how-claude-code-works
+- https://code.claude.com/docs/en/context-window
+- https://code.claude.com/docs/en/statusline
+- https://code.claude.com/docs/en/costs#reduce-token-usage
+- https://code.claude.com/docs/en/sub-agents#choose-a-model
+- https://code.claude.com/docs/en/common-workflows
+- https://github.com/microsoft/mcp
+- https://www.pulumi.com/docs/ai/mcp-server/
+- https://developer.hashicorp.com/terraform/mcp-server
+- https://github.com/microsoft/azure-devops-mcp
+- https://github.com/github/github-mcp-server
+- https://github.com/Azure/aks-mcp

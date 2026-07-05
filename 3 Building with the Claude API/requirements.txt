@@ -1,0 +1,5 @@
+anthropic
+dotenv
+ipykernel
+ipython
+python-dotenv

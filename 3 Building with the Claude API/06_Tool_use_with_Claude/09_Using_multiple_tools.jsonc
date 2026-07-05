@@ -1,0 +1,74 @@
+[
+  {
+    "role": "user",
+    "content": "Set a reminder for my doctors appointment. Its 177 days after Jan 1st, 2050."
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "I'll set a reminder for your doctor's appointment that's 177 days after January 1st, 2050. Let me calculate that date first."
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_01XfWce6tvAzJnZF1pmdQ3RY",
+        "name": "add_duration_to_datetime",
+        "input": {
+          "datetime_str": "2050-01-01",
+          "duration": 177,
+          "unit": "days"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01XfWce6tvAzJnZF1pmdQ3RY",
+        "content": "Monday, June 27, 2050 12:00:00 AM",
+        "is_error": false
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "Now I'll set the reminder for your doctor's appointment on June 27, 2050:"
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_019UzXWzmxEm7rqXjdZYd2fq",
+        "name": "set_reminder",
+        "input": {
+          "content": "Doctor's appointment",
+          "timestamp": "2050-06-27T00:00:00"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_019UzXWzmxEm7rqXjdZYd2fq",
+        "content": null,
+        "is_error": false
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "Your reminder has been set successfully! You will be reminded of your doctor's appointment on Monday, June 27, 2050. If you need to set a specific time for this appointment rather than midnight (12:00 AM), please let me know and I can adjust the reminder."
+      }
+    ]
+  }
+]

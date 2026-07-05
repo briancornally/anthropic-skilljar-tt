@@ -1,0 +1,67 @@
+[
+  {
+    "role": "user",
+    "content": "What is the current time in HH:MM format? Also, what is the current time in SS format?"
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "I can help you get the current time in the requested formats. Let me fetch that for you."
+      },
+      {
+        "type": "tool_use",
+        "id": "toolu_013M9HM18jyBXPLTTWieH2GV",
+        "name": "get_current_datetime",
+        "input": {
+          "date_format": "%H:%M"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_013M9HM18jyBXPLTTWieH2GV",
+        "content": "11:16",
+        "is_error": false
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_01Dv5RUxjEpxCzav4ZAseRVZ",
+        "name": "get_current_datetime",
+        "input": {
+          "date_format": "%S"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_01Dv5RUxjEpxCzav4ZAseRVZ",
+        "content": "30",
+        "is_error": false
+      }
+    ]
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "The current time in HH:MM format is 11:16.\nThe current time in SS format (seconds only) is 30."
+      }
+    ]
+  }
+]
