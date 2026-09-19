@@ -1,0 +1,15 @@
+[project]
+name = "anthropic-3-building-with-the-claudeapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "anthropic>=1.7.0",
+    "dotenv>=0.9.9",
+    "iprogress>=0.4",
+    "ipykernel>=7.3.0",
+    "ipywidgets>=8.1.9",
+    "pip>=26.2.1",
+    "voyageai>=0.5.0",
+]

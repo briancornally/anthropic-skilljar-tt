@@ -65,7 +65,8 @@ def fix_markdown_refs(root: Path, dry_run: bool) -> None:
 
 def main() -> None:
     dry_run = "--dry-run" in sys.argv
-    root = Path(sys.argv[1]) if len(sys.argv) > 1 and not sys.argv[1].startswith("-") else Path(".")
+    root = Path(sys.argv[1]) if len(
+        sys.argv) > 1 and not sys.argv[1].startswith("-") else Path(".")
 
     if not root.exists():
         print(f"Error: {root} does not exist", file=sys.stderr)
